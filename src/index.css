@@ -1,0 +1,37 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #f8f9fb;
+  color: #222;
+  line-height: 1.5;
+}
+
+.container {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+img {
+  max-width: 110%;
+  height: auto;
+  display: block;
+}
+
+@media (max-width: 900px) {
+  .container {
+    max-width: 100%;
+    padding: 0 0.5rem;
+  }
+  .hero,
+  .top-categories,
+  .categories {
+    flex-direction: column ;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}
